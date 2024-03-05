@@ -1,18 +1,18 @@
 # MyTutor
-The goal this project is to create a web-based tool, and possibly also a mobile application, for managing the tutor and TA selection, allocation, and monitoring. 
+The goal of this project is to create a web-based tool, and possibly also a mobile application, for managing the tutor and TA selection, allocation, and monitoring. 
 # How to run MyTutorApp(Server):
 
 ## External Structures or services:
 Dependencies for these are added in "pom.xml" file and are downloaded when the system is run or compiled 
 - The Uses a MySQL database which can be locally or remote
-- Makes connection to database using jdbc driver
-- Has HttpSession management using jdbc and database
+- Makes connection to database using JDBC driver
+- Has HttpSession management using JDBC and database
 - Uses Spring framework Security with SecurityFilterChain, BcryptPasswordEncoder, JDBCHttpSession, etc
 - Makes use of Google Email to send messages from the App
 - Uses an IpInfo API for getting client geolocation
-- Uses Local Storage and directory for creating, storing and managing documents and files for Templates or WebPage use. These must be within src/resources folder.
+- Uses Local Storage and directory for creating, storing, and managing documents and files for Templates or web page use. These must be within src/resources folder.
 - Java Runtime Environment (JRE)
-- Uses maven and java 8 or higher (must be added or upgraded on the system to run the application on)
+- Uses Maven and Java 8 or higher (must be added or upgraded on the system to run the application on)
 
 ## Preparations:
 1. Must have MyTutorDB sql dump with Database tables, fields, constraints and foreign keys configured
@@ -23,51 +23,56 @@ Dependencies for these are added in "pom.xml" file and are downloaded when the s
 Example: 
 - INSERT INTO userprofiles (username, emailAddress) VALUES ("mytutoradmin","my2023tutor@gmail.com");
 - INSERT INTO administrators (username) VALUES ("mytutoradmin");
-- INSERT INTO logindetails (username, loginpassword, role) VALUES ("mytutoradmin", "password","ROLE_ADMIN");
+- INSERT INTO logindetails (username, login password, role) VALUES ("mytutoradmin", "password","ROLE_ADMIN");
 6. Have access to "mytutor2023@gmail.com" email
 
 ## Application properties:
 ### MySQL Database connection
-1. You must provide the remote or localhost address to your MySQL database to the created database schema.
-2. Provide datasource username and password for connection to your database schema
+1. You must provide the remote or local host address to your MySQL database to the created database schema.
+2. Provide a datasource username and password for connection to your database schema
 3. The connection should support multiple access and have administrative rights to it
-4. Provide these details again on DBConnection.java file for the database connection using jdbc
+4. Provide these details again on DBConnection.java file for the database connection using JDBC
 
 ### System Email
 1. Provide mail host, port number, username(email address) and "App password" for the System email
-2. Set the messageFrom parameter in EmailSenderService to the username you provided for your email adrdess
+2. Set the messageFrom parameter in EmailSenderService to the username you provided for your email address
 
 ### Location services
-1. Add your ip key for the location service api
+1. Add your ip key for the location service API
 2. It makes use of services by IpInfo
 3. Can sign up at [Ip Info site to register and get api key](https://ipinfo.io/)
 
 ## Compiling or Running the application:
-1. Run command "java -jar my-spring-boot-app-1.0.0.jar" on a command line if jar file was provided
+1. Run the command "java -jar my-spring-boot-app-1.0.0.jar" on a command line if the jar file was provided
 2. mvn clean install -U and mvn clean package (to build from java files and whole package with system files and get a jar)
 3. 
 
 ## Access to the website
 1.hostIpAddress:8080/login e.g. [Local Access login](http://localhost:8080/login), [remote access login](http://196.47.239.204:8080/login)
 
-## Excecuting the code on VisualStudio
+## Executing the code on VisualStudio
 
 # Required packages:
 1. Java Extension
-2. Maven for java
+2. Maven for Java
 3. Spring boot dashboard
-3. Spring boot Externsion package
+3. Spring boot Extension package
 4. Spring boot initializer java support
 
-# To Excecute the program:
-1. Add new java Spring boot Project
+# To Execute the program:
+1. Add new Java Spring boot Project
 3. Select 3.2.0 snapshot version
 4. Name the package com.mytutor.demo
 5. Clone the git project to the new spring boot project.
 6. Follow the instructions under subtopic: Preparations- to build the database and Application properties subtopics-to connect to the database and send emails.
 
+![Screenshot (213)](https://github.com/snmyk/MyTutor/assets/67907125/203b0338-8dc5-4996-a306-93537de1726a)
 
+![Screenshot (253)](https://github.com/snmyk/MyTutor/assets/67907125/3523554c-e08e-4fb5-a0fe-06f4f18cd9e8)
 
+![Screenshot (257)](https://github.com/snmyk/MyTutor/assets/67907125/94c9232d-4f82-44c8-8591-ce46a6da3580)
+
+![Screenshot (259)](https://github.com/snmyk/MyTutor/assets/67907125/c09c3b4b-b7a9-4278-b6c7-82a0ea269a1d)
 
 
 
