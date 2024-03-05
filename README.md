@@ -66,15 +66,19 @@ Example:
 5. Clone the git project to the new spring boot project.
 6. Follow the instructions under subtopic: Preparations- to build the database and Application properties subtopics-to connect to the database and send emails.
 
-![Screenshot (213)](https://github.com/snmyk/MyTutor/assets/67907125/203b0338-8dc5-4996-a306-93537de1726a)
-
-![Screenshot (253)](https://github.com/snmyk/MyTutor/assets/67907125/3523554c-e08e-4fb5-a0fe-06f4f18cd9e8)
-
-![Screenshot (257)](https://github.com/snmyk/MyTutor/assets/67907125/94c9232d-4f82-44c8-8591-ce46a6da3580)
-
-![Screenshot (259)](https://github.com/snmyk/MyTutor/assets/67907125/c09c3b4b-b7a9-4278-b6c7-82a0ea269a1d)
 
 
+![Screenshot (213)](https://github.com/snmyk/MyTutor/assets/67907125/3c6c40e4-4b8a-4ab8-8561-644d34411063)
+
+
+![Screenshot (254)](https://github.com/snmyk/MyTutor/assets/67907125/c6c4f32b-392d-40bd-b8ae-710870904132)
+
+
+![Screenshot (257)](https://github.com/snmyk/MyTutor/assets/67907125/0bcf3808-bb32-4b43-8dbc-22ef22ce1c3e)
+
+
+
+![Screenshot (258)](https://github.com/snmyk/MyTutor/assets/67907125/42cd4b56-3c4a-4f38-bc8a-dc56468065cb)
 
 
 
